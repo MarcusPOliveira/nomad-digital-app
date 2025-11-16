@@ -1,0 +1,33 @@
+# Ignore artifacts:
+node_modules
+/.expo
+/.expo-shared
+build
+dist
+coverage
+
+# Native build folders
+ios
+android
+
+# Logs
+*.log
+
+# Editor/IDE
+.vscode
+.idea
+
+# Environment files
+.env
+.env.*
+
+# Bundlers
+.turbo
+.next
+
+# Misc
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
