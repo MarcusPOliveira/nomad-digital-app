@@ -3,8 +3,8 @@ import { FlatList, ListRenderItemInfo } from "react-native"
 import { cityPreviewList } from "@/src/data/cities"
 import { CityPreview } from "@/src/types/types"
 
+import { ScreenContainer } from "@/src/components"
 import { CityCard } from "@/src/components/CityCard"
-import ScreenContainer from "@/src/components/ScreenContainer"
 
 export default function HomeScreen() {
   function renderItem({ item }: ListRenderItemInfo<CityPreview>) {
