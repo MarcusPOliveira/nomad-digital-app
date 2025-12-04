@@ -12,7 +12,9 @@ export default function HomeScreen() {
   }
 
   return (
-    <ScreenContainer>
+    <ScreenContainer
+      style={{ alignItems: "center", justifyContent: "center", paddingVertical: 20 }}
+    >
       <FlatList data={cityPreviewList} keyExtractor={(item) => item.id} renderItem={renderItem} />
     </ScreenContainer>
   )
