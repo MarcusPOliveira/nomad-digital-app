@@ -6,9 +6,10 @@ import { useSafeAreaInsets } from "react-native-safe-area-context"
 import { cityPreviewList } from "@/src/data/cities"
 import { CityPreview } from "@/src/types/types"
 
-import { ScreenContainer } from "@/src/components"
-import { CityCard } from "@/src/components/CityCard"
 import { useAppTheme } from "@/src/theme/useAppTheme"
+
+import { ScreenContainer, CityCard } from "@/src/components"
+import { CityFilter } from "@/src/containers/CityFilter"
 
 export default function HomeScreen() {
   const { spacing } = useAppTheme()
@@ -35,6 +36,7 @@ export default function HomeScreen() {
           paddingBottom: spacing.padding,
         }}
         showsVerticalScrollIndicator={false}
+        ListHeaderComponent={<CityFilter />}
       />
     </ScreenContainer>
   )
