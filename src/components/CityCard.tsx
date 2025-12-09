@@ -9,7 +9,7 @@ type CityCardProps = {
 export function CityCard({ cityPreview }: CityCardProps) {
   return (
     <ImageBackground
-      style={{ width: 200, height: 300, margin: 10 }}
+      style={{ width: "100%", height: 280, margin: 10 }}
       source={cityPreview.coverImage}
     >
       <Text>{cityPreview.name}</Text>
