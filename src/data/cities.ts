@@ -661,6 +661,50 @@ export const cities: City[] = [
       longitude: 103.8198,
     },
   },
+  {
+    id: "dubrovnik",
+    name: "Dubrovnik",
+    country: "Croácia",
+    coverImage: require("./images/dubrovnik-croatia.jpg"),
+    description:
+      "Dubrovnik, conhecida como a 'Pérola do Adriático', é uma cidade medieval cercada por muralhas imponentes na costa da Croácia. Famosa por suas águas cristalinas, arquitetura histórica e como cenário da série Game of Thrones, a cidade encanta visitantes com sua beleza única.",
+    categories: [categories[4], categories[0], categories[2]], // Cultura, História, Praia
+    touristAttractions: [
+      {
+        id: "dubrovnik1",
+        name: "Muralhas de Dubrovnik",
+        description:
+          "As imponentes muralhas medievais que circundam a cidade antiga, oferecendo vistas espetaculares do Mar Adriático.",
+        cityId: "dubrovnik",
+      },
+      {
+        id: "dubrovnik2",
+        name: "Cidade Antiga",
+        description:
+          "O centro histórico de Dubrovnik, patrimônio mundial da UNESCO, repleto de ruas de pedra, monumentos e arquitetura medieval.",
+        cityId: "dubrovnik",
+      },
+      {
+        id: "dubrovnik3",
+        name: "Teleférico de Dubrovnik",
+        description:
+          "Um passeio panorâmico que leva ao topo do Monte Srđ, oferecendo vistas deslumbrantes da cidade e do litoral.",
+        cityId: "dubrovnik",
+      },
+      {
+        id: "dubrovnik4",
+        name: "Ilha de Lokrum",
+        description:
+          "Uma ilha naturalmente preservada próxima a Dubrovnik, com jardins botânicos, praias rochosas e um mosteiro histórico.",
+        cityId: "dubrovnik",
+      },
+    ],
+    relatedCitiesIds: ["barcelona", "lisbon", "porto"], // Mediterranean, Historic coastal cities
+    location: {
+      latitude: 42.6507,
+      longitude: 18.0944,
+    },
+  },
 ]
 
 export const cityPreviewList: CityPreview[] = cities
