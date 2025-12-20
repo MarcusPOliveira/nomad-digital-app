@@ -33,7 +33,7 @@ export default function CityDetails() {
       <CityDetailsTouristAttractions touristAttractions={city.touristAttractions} />
       <Divider paddingHorizontal="padding" />
 
-      <CityDetailsMap />
+      <CityDetailsMap location={city.location} />
       <Divider paddingHorizontal="padding" />
 
       <CityDetailsRelatedCities />
