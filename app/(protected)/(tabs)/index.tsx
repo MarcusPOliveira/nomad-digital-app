@@ -22,7 +22,10 @@ export default function HomeScreen() {
   const { spacing } = useAppTheme()
   const { top } = useSafeAreaInsets()
 
-  const { cityPreviewList } = useCities(debouncedCityName, "33")
+  const { cityPreviewList } = useCities({
+    cityName: debouncedCityName,
+    categoryId: selectedCategoryId,
+  })
 
   const flatListRef = useRef(null)
   useScrollToTop(flatListRef)
