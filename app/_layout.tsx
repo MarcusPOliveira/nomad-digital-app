@@ -35,7 +35,13 @@ export default function RootLayout() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar style="light" />
-      <Stack>
+      <Stack
+        screenOptions={{
+          contentStyle: {
+            backgroundColor: theme.colors.background,
+          },
+        }}
+      >
         <Stack.Screen name="(protected)" options={{ headerShown: false }} />
         <Stack.Screen name="sign-in" />
       </Stack>

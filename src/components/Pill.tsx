@@ -9,6 +9,14 @@ export type PillProps = {
   onPress?: PressableProps["onPress"]
 }
 
+/**
+ * Height of the Pill component including vertical paddings and border
+ * 16 (paddingVertical) + 16 (paddingVertical) + 4 (borderWidth * 2) = 36
+ * This is used to offset other components when needed, like in CityDetailsHeader
+ */
+
+export const PILL_HEIGHT = 16 + 16 + 4
+
 export function Pill({ label, iconName, active, onPress }: PillProps) {
   return (
     <Pressable onPress={onPress}>
