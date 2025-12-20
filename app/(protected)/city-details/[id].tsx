@@ -25,12 +25,12 @@ export default function CityDetails() {
     )
   }
   return (
-    <ScreenContainer style={{ paddingHorizontal: 0 }}>
+    <ScreenContainer scrollable style={{ paddingHorizontal: 0 }}>
       <CityDetailsHeader id={city.id} coverImage={city.coverImage} categories={city.categories} />
       <CityDetailsInfo name={city.name} country={city.country} description={city.description} />
       <Divider paddingHorizontal="padding" />
 
-      <CityDetailsTouristAttractions />
+      <CityDetailsTouristAttractions touristAttractions={city.touristAttractions} />
       <Divider paddingHorizontal="padding" />
 
       <CityDetailsMap />
